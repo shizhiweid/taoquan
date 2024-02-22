@@ -4,17 +4,80 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/login/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/official-stock/index",
+			"style": {
+				"navigationBarTitleText": "官方股票",
+				// "navigationStyle": "custom"
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user-stock/index",
+			"style": {
+				"navigationBarTitleText": "用户股票"
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user-stock-details/index",
+			"style": {
+				"backgroundTextStyle": "light",
+				// "navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "用户股票详情",
+				"navigationBarTextStyle": "black" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/official-stock-details/index",
+			"style": {
+				// "backgroundTextStyle": "light",
+				// "navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "官方股票详情"
+				// "navigationBarTextStyle": "black" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
 			}
 		}
 	],
+	"tabBar": {
+		// "custom": true,
+		"color": "#909399",
+		"selectedColor": "#2979ff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"fontSize": "26rpx",
+		"list": [{
+				"pagePath": "pages/official-stock/index",
+				"text": "官方股票"
+			}, {
+				"pagePath": "pages/user-stock/index",
+				"text": "用户股票"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "taoquan",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"mp-alipay": {
+			"allowsBounceVertical": "NO"
+		}
 	},
 	"uniIdRouter": {}
 }

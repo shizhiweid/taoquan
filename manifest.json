@@ -1,7 +1,7 @@
 {
-    "name" : "taoquan1",
-    "appid" : "",
-    "description" : "",
+    "name" : "taoquan",
+    "appid" : "__UNI__69C1680",
+    "description" : "套圈",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
